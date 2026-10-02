@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #14201c;
+  --color-tile: #f1f4f2;
+  --color-paper: #ffffff;
+  --color-steel: #62746d;
+  --color-line: #d5ddd9;
+  --color-pudina: #2e8b57;
+  --color-haldi: #e9a800;
+  --color-mirchi: #c8402b;
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-body: "Instrument Sans", system-ui, sans-serif;
+}
+
+body { margin: 0; background: var(--color-tile); color: var(--color-ink); font-family: var(--font-body); }
+h1, h2, h3, .font-display { font-family: var(--font-display); }
+button:focus-visible, input:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+@keyframes pulse-dot { 0%,100% { opacity: 1 } 50% { opacity: .35 } }
+.live-dot { animation: pulse-dot 1.2s ease-in-out infinite; }

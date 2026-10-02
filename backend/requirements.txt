@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+psycopg[binary,pool]
+pydantic>=2
+httpx
+python-dotenv
+python-multipart
+anthropic

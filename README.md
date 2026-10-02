@@ -1,5 +1,5 @@
 
-# Rasoi (2-day MVP)
+# Rasoi 
 
 FastAPI + Neon Postgres backend, React/Vite/Tailwind dashboard.
 

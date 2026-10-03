@@ -164,3 +164,5 @@ This is a demo, not a production service.
 - **Pantry is manual.** There is no automatic inventory source yet.
 
 Before real customers: add authentication and multi-household support, remove the simulator endpoints, replace drop-and-reseed with migrations, move runs to a job queue with locking, use provider webhooks, add monitoring and tests, and review payment-authorisation and data-protection requirements.
+
+note: need to add QoL features and whatsapp+gmail

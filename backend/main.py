@@ -10,6 +10,7 @@ from agent import rasoi, llm, state_machine as S
 from agent.rasoi import Run
 from tools import world, household as th, inventory as ti
 from integrations import gnani
+from routes import whatsapp as whatsapp_routes
 
 
 @asynccontextmanager
@@ -23,6 +24,8 @@ async def lifespan(app):
 
 app = FastAPI(title="Rasoi", lifespan=lifespan)
 app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:5173"], allow_methods=["*"], allow_headers=["*"])
+
+app.include_router(whatsapp_routes.router)
 
 
 class RunReq(BaseModel):
